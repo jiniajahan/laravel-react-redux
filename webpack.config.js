@@ -2,7 +2,7 @@ const webpack = require('webpack');
 
 module.exports = {
     entry: {
-        home: './resources/pages/home/main'
+        home: './resources/pages/home/main',
         // 'poll-single': './resources/pages/poll-single/main',
         // 'poll-create': './resources/pages/poll-create/main',
         // 'created-polls': './resources/pages/profile/created-polls/main'
@@ -13,9 +13,9 @@ module.exports = {
         publicPath: ''
     },
     module: {
-        preLoaders: [
-            { test: /\.js$/, loader: 'eslint', exclude: /node_modules/ }
-        ],
+        // preLoaders: [
+        //     { test: /\.js$/, loader: 'eslint', exclude: /node_modules/ }
+        // ],
         loaders: [
             { test: /\.js$/, loader: 'babel', exclude: /node_modules/ }
         ]
